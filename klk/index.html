@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fortnite Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            FORTNITE<span>STORE</span>
+        </div>
+
+        <nav class="nav" id="nav">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#tienda">Tienda</a>
+            <a href="#categorias">Categorías</a>
+
+            <button class="btn-login" id="btnLogin">
+                👤 Iniciar sesión
+            </button>
+
+        </nav>
+
+        <div class="acciones">
+
+            <button class="btn-carrito" id="btnCarrito">
+                🛒
+                <span id="contadorCarrito">0</span>
+            </button>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-contenido">
+
+                <p class="etiqueta">🔥 TIENDA GAMER</p>
+
+                <h1>
+                    TU ESTILO.
+                    <span>TU BATALLA.</span>
+                </h1>
+
+                <p class="hero-texto">
+                    Descubre atuendos, picos, mochilas y gestos
+                    para darle tu propio estilo a tus partidas.
+                </p>
+
+                <a href="#tienda" class="btn-principal">
+                    🛍️ EXPLORAR TIENDA
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIAS ================= -->
+
+        <section class="categorias" id="categorias">
+
+            <h2>Explora por categoría</h2>
+
+            <div class="categorias-grid">
+
+                <button class="categoria activo" data-categoria="todos">
+                    🎮 Todos
+                </button>
+
+                <button class="categoria" data-categoria="atuendo">
+                    👕 Atuendos
+                </button>
+
+                <button class="categoria" data-categoria="pico">
+                    ⛏️ Picos
+                </button>
+
+                <button class="categoria" data-categoria="mochila">
+                    🎒 Mochilas
+                </button>
+
+                <button class="categoria" data-categoria="gesto">
+                    💃 Gestos
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TIENDA ================= -->
+
+        <section class="tienda" id="tienda">
+
+            <div class="titulo-tienda">
+
+                <div>
+                    <p class="mini-titulo">COSMÉTICOS</p>
+                    <h2>Tienda destacada</h2>
+                </div>
+
+                <div class="busqueda">
+
+                    <input
+                        type="text"
+                        id="buscador"
+                        placeholder="🔎 Buscar cosmético..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- FILTROS -->
+
+            <div class="filtros">
+
+                <button class="filtro activo" data-filtro="todos">
+                    Todos
+                </button>
+
+                <button class="filtro" data-filtro="barato">
+                    Menos de 800
+                </button>
+
+                <button class="filtro" data-filtro="medio">
+                    800 - 1200
+                </button>
+
+                <button class="filtro" data-filtro="caro">
+                    Más de 1200
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTOS -->
+
+            <div class="productos" id="productos">
+
+
+                <!-- PRODUCTO 1 -->
+
+                <article
+                    class="producto"
+                    data-categoria="atuendo"
+                    data-precio="1500"
+                    data-nombre="Guerrero Oscuro"
+                >
+
+                    <button class="favorito">
+                        ♡
+                    </button>
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/guerrero-oscuro.jpg"
+                            alt="Guerrero Oscuro"
+                        >
+
+                        <span class="rareza legendario">
+                            LEGENDARIO
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <span class="tipo">
+                            ATUENDO
+                        </span>
+
+                        <h3>Guerrero Oscuro</h3>
+
+                        <p>
+                            Un guerrero preparado para la batalla.
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <strong>
+                                1500 V-Bucks
+                            </strong>
+
+                            <button
+                                class="btn-comprar"
+                                data-nombre="Guerrero Oscuro"
+                                data-precio="1500"
+                            >
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 2 -->
+
+                <article
+                    class="producto"
+                    data-categoria="atuendo"
+                    data-precio="1200"
+                    data-nombre="Guerrero Neon"
+                >
+
+                    <button class="favorito">
+                        ♡
+                    </button>
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/guerrero-neon.jpg"
+                            alt="Guerrero Neon"
+                        >
+
+                        <span class="rareza epico">
+                            ÉPICO
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <span class="tipo">
+                            ATUENDO
+                        </span>
+
+                        <h3>Guerrero Neon</h3>
+
+                        <p>
+                            Un diseño brillante para destacar.
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <strong>
+                                1200 V-Bucks
+                            </strong>
+
+                            <button
+                                class="btn-comprar"
+                                data-nombre="Guerrero Neon"
+                                data-precio="1200"
+                            >
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 3 -->
+
+                <article
+                    class="producto"
+                    data-categoria="pico"
+                    data-precio="800"
+                    data-nombre="Destructor"
+                >
+
+                    <button class="favorito">
+                        ♡
+                    </button>
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/destructor.jpg"
+                            alt="Destructor"
+                        >
+
+                        <span class="rareza epico">
+                            ÉPICO
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <span class="tipo">
+                            PICO
+                        </span>
+
+                        <h3>Destructor</h3>
+
+                        <p>
+                            Un pico preparado para destruir.
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <strong>
+                                800 V-Bucks
+                            </strong>
+
+                            <button
+                                class="btn-comprar"
+                                data-nombre="Destructor"
+                                data-precio="800"
+                            >
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 4 -->
+
+                <article
+                    class="producto"
+                    data-categoria="pico"
+                    data-precio="500"
+                    data-nombre="Hacha Galáctica"
+                >
+
+                    <button class="favorito">
+                        ♡
+                    </button>
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/hacha-galactica.jpg"
+                            alt="Hacha Galáctica"
+                        >
+
+                        <span class="rareza raro">
+                            RARO
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <span class="tipo">
+                            PICO
+                        </span>
+
+                        <h3>Hacha Galáctica</h3>
+
+                        <p>
+                            Un diseño inspirado en el espacio.
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <strong>
+                                500 V-Bucks
+                            </strong>
+
+                            <button
+                                class="btn-comprar"
+                                data-nombre="Hacha Galáctica"
+                                data-precio="500"
+                            >
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 5 -->
+
+                <article
+                    class="producto"
+                    data-categoria="mochila"
+                    data-precio="600"
+                    data-nombre="Mochila Neon"
+                >
+
+                    <button class="favorito">
+                        ♡
+                    </button>
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/mochila-neon.jpg"
+                            alt="Mochila Neon"
+                        >
+
+                        <span class="rareza raro">
+                            RARO
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <span class="tipo">
+                            MOCHILA
+                        </span>
+
+                        <h3>Mochila Neon</h3>
+
+                        <p>
+                            Dale un toque futurista a tu personaje.
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <strong>
+                                600 V-Bucks
+                            </strong>
+
+                            <button
+                                class="btn-comprar"
+                                data-nombre="Mochila Neon"
+                                data-precio="600"
+                            >
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 6 -->
+
+                <article
+                    class="producto"
+                    data-categoria="mochila"
+                    data-precio="800"
+                    data-nombre="Mochila Espacial"
+                >
+
+                    <button class="favorito">
+                        ♡
+                    </button>
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/mochila-espacial.jpg"
+                            alt="Mochila Espacial"
+                        >
+
+                        <span class="rareza epico">
+                            ÉPICO
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <span class="tipo">
+                            MOCHILA
+                        </span>
+
+                        <h3>Mochila Espacial</h3>
+
+                        <p>
+                            Equipa tu personaje con estilo espacial.
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <strong>
+                                800 V-Bucks
+                            </strong>
+
+                            <button
+                                class="btn-comprar"
+                                data-nombre="Mochila Espacial"
+                                data-precio="800"
+                            >
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 7 -->
+
+                <article
+                    class="producto"
+                    data-categoria="gesto"
+                    data-precio="500"
+                    data-nombre="Baile Epico"
+                >
+
+                    <button class="favorito">
+                        ♡
+                    </button>
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/baile-epico.jpg"
+                            alt="Baile Epico"
+                        >
+
+                        <span class="rareza raro">
+                            RARO
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <span class="tipo">
+                            GESTO
+                        </span>
+
+                        <h3>Baile Épico</h3>
+
+                        <p>
+                            Celebra tus victorias con estilo.
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <strong>
+                                500 V-Bucks
+                            </strong>
+
+                            <button
+                                class="btn-comprar"
+                                data-nombre="Baile Epico"
+                                data-precio="500"
+                            >
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 8 -->
+
+                <article
+                    class="producto"
+                    data-categoria="gesto"
+                    data-precio="800"
+                    data-nombre="Victoria Real"
+                >
+
+                    <button class="favorito">
+                        ♡
+                    </button>
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="imagenes/victoria-real.jpg"
+                            alt="Victoria Real"
+                        >
+
+                        <span class="rareza epico">
+                            ÉPICO
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <span class="tipo">
+                            GESTO
+                        </span>
+
+                        <h3>Victoria Real</h3>
+
+                        <p>
+                            Celebra tu victoria.
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <strong>
+                                800 V-Bucks
+                            </strong>
+
+                            <button
+                                class="btn-comprar"
+                                data-nombre="Victoria Real"
+                                data-precio="800"
+                            >
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= MODAL CARRITO ================= -->
+
+    <div class="modal" id="modalCarrito">
+
+        <div class="modal-contenido carrito-modal">
+
+            <button class="cerrar" id="cerrarCarrito">
+                ×
+            </button>
+
+            <h2>🛒 Tu carrito</h2>
+
+            <div id="listaCarrito"></div>
+
+            <div class="carrito-total">
+
+                <span>Total</span>
+
+                <strong>
+                    <span id="totalCarrito">0</span>
+                    V-Bucks
+                </strong>
+
+            </div>
+
+            <button
+                class="btn-principal btn-comprar-final"
+                id="btnFinalizar"
+            >
+                💳 Finalizar compra
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= MODAL LOGIN ================= -->
+
+    <div class="modal" id="modalLogin">
+
+        <div class="modal-contenido">
+
+            <button class="cerrar" id="cerrarLogin">
+                ×
+            </button>
+
+            <div class="modal-icono">
+                👤
+            </div>
+
+            <h2>Iniciar sesión</h2>
+
+            <p class="modal-descripcion">
+                Ingresa a tu cuenta para continuar.
+            </p>
+
+            <form id="formLogin">
+
+                <label>
+                    Correo electrónico
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="correo@gmail.com"
+                    required
+                >
+
+                <label>
+                    Contraseña
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="********"
+                    required
+                >
+
+                <button type="submit" class="btn-principal">
+                    Iniciar sesión
+                </button>
+
+            </form>
+
+            <p class="cambiar-formulario">
+                ¿No tienes una cuenta?
+
+                <button id="irRegistro">
+                    Regístrate
+                </button>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= MODAL REGISTRO ================= -->
+
+    <div class="modal" id="modalRegistro">
+
+        <div class="modal-contenido">
+
+            <button class="cerrar" id="cerrarRegistro">
+                ×
+            </button>
+
+            <div class="modal-icono">
+                🎮
+            </div>
+
+            <h2>Crear cuenta</h2>
+
+            <p class="modal-descripcion">
+                Regístrate para guardar tus compras.
+            </p>
+
+            <form id="formRegistro">
+
+                <label>
+                    Nombre
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Tu nombre"
+                    required
+                >
+
+                <label>
+                    Correo electrónico
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="correo@gmail.com"
+                    required
+                >
+
+                <label>
+                    Contraseña
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="********"
+                    minlength="6"
+                    required
+                >
+
+                <button type="submit" class="btn-principal">
+                    Crear cuenta
+                </button>
+
+            </form>
+
+            <p class="cambiar-formulario">
+                ¿Ya tienes una cuenta?
+
+                <button id="irLogin">
+                    Iniciar sesión
+                </button>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= NOTIFICACIÓN ================= -->
+
+    <div class="notificacion" id="notificacion">
+        Producto agregado al carrito 🛒
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            FORTNITE<span>STORE</span>
+        </div>
+
+        <p>
+            Tienda gamer de demostración.
+        </p>
+
+        <p class="copyright">
+            © 2026 Fortnite Store - Proyecto educativo
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
